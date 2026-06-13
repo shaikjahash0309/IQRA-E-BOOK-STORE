@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IQRA E-STORE X — Interactive Knowledge Universe">
+  <title>IQRA E-STORE X | Interactive Knowledge Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/library.css">
+  <link rel="stylesheet" href="css/payment.css">
+  <link rel="stylesheet" href="css/reader.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Transition overlay -->
+    <div id="transition-overlay" class="transition-overlay" aria-hidden="true">
+      <div class="transition-particles" id="transition-particles"></div>
+    </div>
+
+    <!-- HERO SECTION -->
+<section id="hero" class="view view--active" data-view="hero">
+
+  <canvas id="starfield" class="starfield-canvas"></canvas>
+  <div class="nebula-bg"></div>
+  <div class="hero-particles" id="hero-particles"></div>
+
+  <div class="hero-content">
+
+    <h1 class="hero-cinematic-title" aria-label="IQRA E BOOK STORE">
+      <span class="hero-cinematic-line">IQRA</span>
+      <span class="hero-cinematic-line hero-cinematic-line--accent">E BOOK STORE</span>
+    </h1>
+
+    <button class="btn btn--hero" id="explore-btn" type="button">
+      <span class="btn-glow"></span>
+      <span class="btn-text">EXPLORE LIBRARY</span>
+    </button>
+
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+  </div>
+
+</section>
+
+    <!-- LIBRARY SECTION -->
+    <section id="library" class="view" data-view="library">
+      <header class="library-header">
+        <div class="library-brand">
+          <span class="brand-icon">📚</span>
+          <h2>Knowledge Galaxy</h2>
+        </div>
+        <nav class="library-nav">
+          <button class="nav-btn" id="nav-home" type="button">Home</button>
+          <button class="nav-btn nav-btn--active" type="button">Library</button>
+        </nav>
+      </header>
+
+      <div class="featured-carousel" id="featured-carousel">
+        <div class="carousel-track" id="carousel-track"></div>
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+
+      <div class="library-controls">
+        <div class="search-bar">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" id="search-input" placeholder="Search the knowledge dimension..." autocomplete="off">
+        </div>
+        <div class="category-filters" id="category-filters"></div>
+      </div>
+
+      <div class="book-grid" id="book-grid"></div>
+
+      <footer id="footer" class="site-footer">
+  <div class="footer-wave"></div>
+
+  <div class="footer-content">
+    
+    <div class="footer-col">
+      <h3>Vision</h3>
+      <p>
+        IQRA E-STORE X reimagines reading as an immersive journey through a living digital universe
+        where every book becomes an interactive artifact of knowledge.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>About IQRA E-STORE X</h3>
+      <p>
+        A next-generation platform blending cinematic design, secure digital commerce, and smooth UI
+        to transform how users explore and access knowledge.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+
+      <p>📧 shaikjahashahmed9@gmail.com</p>
+      <p>📱 +91 8639917686</p>
+
+      <div class="social-links">
+        <a href="https://instagram.com/codewithahmed0309" class="social-link" aria-label="Instagram">📸</a>
+        <a href="https://github.com/shaikjahash0309" class="social-link" aria-label="GitHub">⌘</a>
+        <a href="mailto:shaikjahashahmed9@gmail.com" class="social-link" aria-label="Email">✉</a>
+        <a href="tel:+918639917686" class="social-link" aria-label="Phone">📞</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 IQRA E-STORE X</span>
+    <span>Interactive Knowledge Universe</span>
+      </div>
+      </footer>
+    </section>
+
+    <!-- UNLOCK SECTION -->
+    <section id="unlock" class="view" data-view="unlock">
+      <div class="unlock-content unlock-content--simple">
+        <h2 class="unlock-title" id="unlock-book-title">Book Title</h2>
+        <p class="unlock-payment-label">Payment ID</p>
+        <p class="unlock-payment-id" id="unlock-payment-id">—</p>
+        <button class="btn btn--download" id="download-btn" type="button">
+          <span class="btn-glow"></span>
+          <span class="btn-text">Download Book</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- READER SECTION -->
+    <section id="reader" class="view" data-view="reader">
+      <div class="reader-toolbar">
+        <button class="reader-btn" id="reader-close" type="button" aria-label="Close reader">✕</button>
+        <div class="reader-controls">
+          <button class="reader-btn" id="reader-prev" type="button">◀</button>
+          <span class="reader-page-info" id="reader-page-info">1 / 10</span>
+          <button class="reader-btn" id="reader-next" type="button">▶</button>
+        </div>
+        <div class="reader-settings">
+          <select id="reader-theme" class="reader-select" aria-label="Theme">
+            <option value="void">Void</option>
+            <option value="indigo">Indigo</option>
+            <option value="cream">Cream</option>
+          </select>
+          <select id="reader-layout" class="reader-select" aria-label="Layout">
+            <option value="single">Single Page</option>
+            <option value="double">Double Page</option>
+          </select>
+          <button class="reader-btn" id="reader-font-down" type="button">A-</button>
+          <button class="reader-btn" id="reader-font-up" type="button">A+</button>
+        </div>
+      </div>
+      <div class="reader-progress"><div class="reader-progress-bar" id="reader-progress-bar"></div></div>
+      <div class="reader-stage" id="reader-stage">
+        <div class="reader-book" id="reader-book"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- MODALS -->
+  <div id="modal-root"></div>
+
+  <script type="module" src="js/main.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>
