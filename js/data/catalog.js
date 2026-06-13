@@ -28,7 +28,7 @@ export const BOOKS = [
     cover: 'images/DP.png',
     rating: 4.9,
     premium: true,
-    price: 19,
+    price: 14,
     featured: true,
     samplePdf: 'pdfs/khwaab.pdf',
     downloadFile: "https://drive.google.com/uc?export=download&id=1XFHV5PjT-0x5FyRzus6ZPj6mJD-5mfkR"
@@ -82,7 +82,7 @@ downloadFile: "https://drive.google.com/uc?export=download&id=1jfML-jUSh2xfwk3zI
     rating: 4.9,
     premium: true,
     confidential: true,
-    price: 9,
+    price: 19,
     featured: true,
     downloadFile: "https://drive.google.com/uc?export=download&id=1r1--SkIY7eEaIO0gAuvTlsMUJTB_Qowm"
   },
